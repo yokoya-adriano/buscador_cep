@@ -1,0 +1,95 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,96,121,0.8603816526610644) 41%, rgba(0,212,255,1) 100%);
+}
+
+.title {
+    font-size: 65px;
+    color: #FFF;
+    animation: fadeTitle 1.5s;
+}
+
+@keyframes fadeTitle {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.containerInput {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 15px;
+    margin: 30px 0px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.containerInput input {
+    background-color: transparent;
+    border: 0px;
+    font-size: 20px;
+    color: #FFF;
+    outline: none;
+    margin-right: 10px;
+}
+
+.containerInput input::placeholder {
+    color: #EEE;
+}
+
+.buttonSearch {
+    background-color: transparent;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.buttonSearch:hover {
+    transform: scale(1.2);
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.main h2 {
+    margin: 15px 0px;
+    font-size: 30px;
+}
+
+.main span {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+@media(max-width: 569px) {
+    .title {
+        font-size: 45px;
+    }
+    .main {
+        max-width: 80%;
+        min-height: 250px;
+    }
+    .main h2 {
+        font-size: 24px;
+    }
+}
